@@ -1,0 +1,155 @@
+.container {
+    width: var(--container-width);
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    color: var(--color-text-dark);
+    font-size: var(--text-size-md);
+    line-height: var(--text-line-height-md);
+    font-weight: 400;
+}
+
+body * {
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.leaf-container {
+    position: relative;
+}
+
+.leaf-container img {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.orange-bg {
+    background-color: #fdf8f5;
+}
+
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+    padding-bottom: 120px;
+}
+
+.tomato-container {
+    position: absolute;
+    top: 110vh;
+    right: 0;
+}
+
+.light-bg-container {
+    background-image: url(../assets/light-bg.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: var(--text-primary-spacing-top);
+    gap: 32px;
+}
+
+.text-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.veggies-bg-container {
+    padding-top: 200px;
+    position: relative;
+}
+
+.veggies-bg {
+    position: absolute;
+    top: 50px;
+}
+
+.veggies-bg.right {
+    top: 0;
+    right: 0;
+}
+
+.text-primary {
+    font-size: var(--text-size-xl);
+    line-height: var(--text-line-height-xl);
+    font-weight: 500;
+    color: #fff;
+}
+
+.text-secondary {
+    color: #fff;
+}
+
+.button-container {
+    display: flex;
+    gap: var(--button-gap);
+}
+
+.button {
+    display: block;
+    height: var(--button-height);
+}
+
+.button img {
+    height: 100%;
+    width: auto;
+}
+
+.app-preview-1 {
+    position: absolute;
+    top: 196px;
+    right: var(--app-preview-1-right);
+    width: var(--app-preview-1-width);
+    height: auto;
+}
+
+.app-preview-2 {
+    position: absolute;
+    top: 160px;
+    left: var(--app-preview-2-left);
+    width: var(--app-preview-2-width);
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.position-relative {
+    position: relative;
+}

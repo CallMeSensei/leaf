@@ -1,0 +1,199 @@
+/* Global */
+:root {
+    --color-primary: #d46d28;
+    --color-text-dark: #0f031f;
+    --color-text-dark-light: rgba(15, 3, 31, 0.6);
+}
+
+/* Desktop and large screen */
+@media (min-width: 1920px) {
+    :root {
+        --container-width: 80%;
+
+        /* Text */
+        --text-size-xl: 60px;
+        --text-size-lg: 35px;
+        --text-size-md: 23px;
+        --text-size-sm: 20px;
+        --text-size-xs: 16px;
+        --text-size-xxs: 14px;
+
+        --text-line-height-xl: 80px;
+        --text-line-height-lg: 48px;
+        --text-line-height-md: 32px;
+        --text-line-height-sm: 28px;
+        --text-line-height-xs: 24px;
+        --text-line-height-xxs: 20px;
+
+        --text-primary-spacing-top: 270px;
+
+        /* Button */
+        --button-height: 54px;
+        --button-gap: 40px;
+
+        /* App preview */
+        --app-preview-1-width: 764px;
+        --app-preview-1-right: 30px;
+
+        --app-preview-2-width: 900px;
+        --app-preview-2-left: -200px;
+
+        /* Background */
+        --bg-size: cover;
+    }
+}
+
+/* Small laptop */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    :root {
+        --container-width: 80%;
+
+        /* Text */
+        --text-size-xl: 48px;
+        --text-size-lg: 30px;
+        --text-size-md: 20px;
+        --text-size-sm: 16px;
+        --text-size-xs: 14px;
+        --text-size-xxs: 12px;
+
+        --text-line-height-xl: 60px;
+        --text-line-height-lg: 36px;
+        --text-line-height-md: 32px;
+        --text-line-height-sm: 24px;
+        --text-line-height-xs: 20px;
+        --text-line-height-xxs: 18px;
+
+        --text-primary-spacing-top: 200px;
+
+        /* Button */
+        --button-height: 40px;
+        --button-gap: 20px;
+
+        /* App preview */
+        --app-preview-1-width: 600px;
+        --app-preview-1-right: 40px;
+
+        --app-preview-2-width: 700px;
+        --app-preview-2-left: -200px;
+    }
+    .tomato-container {
+        width: 200px;
+        height: auto;
+    }
+}
+
+/* Tablet */
+@media (min-width: 960px) and (max-width: 1440px) {
+    :root {
+        --container-width: 80%;
+
+        /* Text */
+        --text-size-xl: 48px;
+        --text-size-lg: 30px;
+        --text-size-md: 20px;
+        --text-size-sm: 16px;
+        --text-size-xs: 14px;
+        --text-size-xxs: 12px;
+
+        --text-line-height-xl: 60px;
+        --text-line-height-lg: 36px;
+        --text-line-height-md: 32px;
+        --text-line-height-sm: 24px;
+        --text-line-height-xs: 20px;
+        --text-line-height-xxs: 18px;
+
+        --text-primary-spacing-top: 200px;
+
+        /* Button */
+        --button-height: 40px;
+        --button-gap: 20px;
+
+        /* App preview */
+        --app-preview-1-width: 600px;
+        --app-preview-1-right: 40px;
+
+        --app-preview-2-width: 700px;
+        --app-preview-2-left: -200px;
+    }
+    .tomato-container {
+        width: 200px;
+        height: auto;
+    }
+    .veggies-bg {
+        width: 200px;
+    }
+
+    .first-block {
+        margin-top: 100px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) and (max-width: 960px) {
+    :root {
+        --container-width: 80%;
+
+        /* Text */
+        --text-size-xl: 48px;
+        --text-size-lg: 30px;
+        --text-size-md: 20px;
+        --text-size-sm: 16px;
+        --text-size-xs: 14px;
+        --text-size-xxs: 12px;
+
+        --text-line-height-xl: 60px;
+        --text-line-height-lg: 36px;
+        --text-line-height-md: 32px;
+        --text-line-height-sm: 24px;
+        --text-line-height-xs: 20px;
+        --text-line-height-xxs: 18px;
+
+        --text-primary-spacing-top: 200px;
+
+        /* Button */
+        --button-height: 40px;
+        --button-gap: 20px;
+
+        /* App preview */
+        --app-preview-1-width: 600px;
+        --app-preview-1-right: -200px;
+
+        --app-preview-2-width: 700px;
+        --app-preview-2-left: -400px;
+    }
+
+    .tomato-container,
+    .veggies-bg {
+        display: none;
+    }
+
+    .block-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    body .subscription-card {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .app-preview {
+        display: none;
+    }
+
+    body .first-block {
+        margin-top: 100px;
+    }
+
+    body .text-primary,
+    body .text-secondary {
+        color: var(--color-text-dark) !important;
+    }
+
+    body .card-container {
+        flex-direction: column;
+    }
+
+    body .card-column.margin-top-40 {
+        margin-top: 0;
+    }
+}

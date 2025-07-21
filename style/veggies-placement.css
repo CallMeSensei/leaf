@@ -1,0 +1,55 @@
+@media (min-width: 900px) {
+    .veggies :nth-child(1) {
+        left: 20px;
+        top: -100px;
+    }
+
+    .veggies :nth-child(2) {
+        left: 50px;
+        top: -170px;
+    }
+
+    .veggies :nth-child(3) {
+        left: 300px;
+        top: -160px;
+    }
+
+    .veggies :nth-child(4) {
+        left: 540px;
+        top: -150px;
+    }
+}
+
+@media (max-width: 900px) {
+    .vegg-image {
+        transform: scale(0.8);
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .veggies :nth-child(1) {
+        left: -30px;
+        top: -100px;
+    }
+
+    .veggies :nth-child(2) {
+        left: -60px;
+        top: -170px;
+    }
+
+    .veggies :nth-child(3) {
+        left: 110px;
+        top: -150px;
+    }
+
+    .veggies :nth-child(4) {
+        left: 270px;
+        top: -150px;
+    }
+
+    .vegg-image {
+        transform: scale(0.6);
+        height: auto;
+    }
+}

@@ -1,0 +1,89 @@
+.card-container {
+    display: flex;
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card {
+    width: 280px;
+    background-color: #fff;
+    padding: 40px 32px;
+    border-radius: 10px;
+    box-shadow: 0px 12px 30px 0px rgba(15, 3, 31, 0.14);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-title {
+    font-size: var(--text-size-md);
+    line-height: var(--text-line-height-md);
+    font-weight: 500;
+    color: var(--color-primary);
+    white-space: nowrap;
+}
+
+.card-description {
+    font-size: var(--text-size-xs);
+    line-height: var(--text-line-height-xs);
+    color: var(--color-text-dark-light);
+}
+
+/* Subscription card */
+
+.subscription-card {
+    background: linear-gradient(68.97deg, #d46d28 0%, #ed9961 100%);
+    border-radius: 20px;
+    box-shadow: 0px 24px 32px 0px rgba(15, 3, 31, 0.2);
+    width: 795px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.veggies {
+    position: relative;
+    width: 795px;
+    z-index: 0;
+    margin: 0 auto;
+}
+
+.veggies img {
+    position: absolute;
+}
+
+.subscription-card .subscription-card-title {
+    font-size: var(--text-size-md);
+    line-height: var(--text-line-height-md);
+    font-weight: 500;
+    color: #fff;
+    padding: 56px 64px 32px;
+    text-align: center;
+}
+
+.subscription-card .subscription-card-description {
+    padding: 0 47.5px 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.subscription-card .subscription-card-description-item {
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: var(--text-size-sm);
+    line-height: var(--text-line-height-sm);
+    font-weight: 300;
+}
+
+.subscription-card .subscription-card-description-item strong {
+    font-weight: 500;
+}
