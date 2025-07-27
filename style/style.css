@@ -1,7 +1,6 @@
 .container {
     width: var(--container-width);
     margin: 0 auto;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -61,11 +60,19 @@ body {
     right: 0;
 }
 
-.light-bg-container {
+.image-bg-container {
     background-image: url(../assets/light-bg.png);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+
+.image-bg-container-2 {
+    background-image: url(../assets/rectangle-1.png), url(../assets/rectangle-2.png);
+    background-size: cover, cover;
+    background-position: bottom, bottom;
+    background-repeat: no-repeat, no-repeat;
+    padding: 500px 0;
 }
 
 .text-container {
@@ -89,11 +96,11 @@ body {
 
 .veggies-bg {
     position: absolute;
-    top: 50px;
+    top: 200px;
+    width: 250px;
 }
 
 .veggies-bg.right {
-    top: 0;
     right: 0;
 }
 
@@ -116,6 +123,8 @@ body {
 .button {
     display: block;
     height: var(--button-height);
+    background-color: black;
+    border-radius: 4px;
 }
 
 .button img {
@@ -138,18 +147,41 @@ body {
     width: var(--app-preview-2-width);
 }
 
-.margin-top-60 {
-    margin-top: 60px;
+.layout {
+    display: flex;
+    gap: 32px;
 }
 
-.margin-top-40 {
-    margin-top: 40px;
+.combined-pictures {
+    position: relative;
 }
 
-.center {
+.combined-pictures .leafs {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.pumkin {
+    background-image: url("../assets/veggies/pumpkin.png");
+    background-size: 350px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.media-container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
-.position-relative {
-    position: relative;
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.media-width {
+    width: 176px;
 }

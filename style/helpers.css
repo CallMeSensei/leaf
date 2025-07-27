@@ -1,0 +1,57 @@
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mirror {
+    transform: scaleX(-1);
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.text-xxs {
+    font-size: var(--text-size-xxs);
+    line-height: var(--text-line-height-xxs);
+}
+
+.text-xs {
+    font-size: var(--text-size-xs);
+    line-height: var(--text-line-height-xs);
+}
+
+.text-sm {
+    font-size: var(--text-size-sm);
+    line-height: var(--text-line-height-sm);
+}
+
+.text-md {
+    font-size: var(--text-size-md);
+    line-height: var(--text-line-height-md);
+}
+
+.text-lg {
+    font-size: var(--text-size-lg);
+    line-height: var(--text-line-height-lg);
+}
+
+.text-xl {
+    font-size: var(--text-size-xl);
+    line-height: var(--text-line-height-xl);
+}

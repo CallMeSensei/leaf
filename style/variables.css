@@ -8,7 +8,7 @@
 /* Desktop and large screen */
 @media (min-width: 1920px) {
     :root {
-        --container-width: 80%;
+        --container-width: 70%;
 
         /* Text */
         --text-size-xl: 60px;
@@ -46,7 +46,7 @@
 /* Small laptop */
 @media (min-width: 1440px) and (max-width: 1920px) {
     :root {
-        --container-width: 80%;
+        --container-width: 75%;
 
         /* Text */
         --text-size-xl: 48px;
@@ -167,7 +167,7 @@
         display: none;
     }
 
-    .block-content {
+    .block-grid {
         grid-template-columns: 1fr !important;
     }
 
