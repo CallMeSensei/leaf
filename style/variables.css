@@ -1,8 +1,17 @@
 /* Global */
 :root {
     --color-primary: #d46d28;
+    --color-primary-light: rgba(212, 109, 40, 0.6);
     --color-text-dark: #0f031f;
     --color-text-dark-light: rgba(15, 3, 31, 0.6);
+
+    /* Button */
+    --button-height: 54px;
+    --button-gap: 40px;
+
+    --pumkin-size: 350px;
+    --app-preview-3-width: 592px;
+    --app-preview-leaf-width: 311px;
 }
 
 /* Desktop and large screen */
@@ -47,6 +56,7 @@
 @media (min-width: 1440px) and (max-width: 1920px) {
     :root {
         --container-width: 75%;
+        --pumkin-size: 250px;
 
         /* Text */
         --text-size-xl: 48px;
@@ -75,10 +85,9 @@
 
         --app-preview-2-width: 700px;
         --app-preview-2-left: -200px;
-    }
-    .tomato-container {
-        width: 200px;
-        height: auto;
+
+        --app-preview-3-width: 400px;
+        --app-preview-leaf-width: 200px;
     }
 }
 
@@ -86,6 +95,45 @@
 @media (min-width: 960px) and (max-width: 1440px) {
     :root {
         --container-width: 80%;
+        --pumkin-size: 200px;
+        /* Text */
+        --text-size-xl: 48px;
+        --text-size-lg: 30px;
+        --text-size-md: 20px;
+        --text-size-sm: 16px;
+        --text-size-xs: 14px;
+        --text-size-xxs: 12px;
+
+        --text-line-height-xl: 60px;
+        --text-line-height-lg: 36px;
+        --text-line-height-md: 32px;
+        --text-line-height-sm: 24px;
+        --text-line-height-xs: 20px;
+        --text-line-height-xxs: 18px;
+
+        --text-primary-spacing-top: 200px;
+
+        /* Button */
+        --button-height: 40px;
+        --button-gap: 20px;
+
+        /* App preview */
+        --app-preview-1-width: 50%;
+        --app-preview-1-right: -100px;
+
+        --app-preview-2-width: 50%;
+        --app-preview-2-left: -200px;
+
+        --app-preview-3-width: 400px;
+        --app-preview-leaf-width: 200px;
+    }
+}
+
+/* Mobile */
+@media (min-width: 768px) and (max-width: 960px) {
+    :root {
+        --container-width: 80%;
+        --pumkin-size: 150px;
 
         /* Text */
         --text-size-xl: 48px;
@@ -109,27 +157,11 @@
         --button-gap: 20px;
 
         /* App preview */
-        --app-preview-1-width: 600px;
-        --app-preview-1-right: 40px;
-
-        --app-preview-2-width: 700px;
-        --app-preview-2-left: -200px;
-    }
-    .tomato-container {
-        width: 200px;
-        height: auto;
-    }
-    .veggies-bg {
-        width: 200px;
-    }
-
-    .first-block {
-        margin-top: 100px;
+        /* HIDDEN */
     }
 }
 
-/* Mobile */
-@media (max-width: 768px) and (max-width: 960px) {
+@media (max-width: 768px) {
     :root {
         --container-width: 80%;
 
@@ -155,45 +187,6 @@
         --button-gap: 20px;
 
         /* App preview */
-        --app-preview-1-width: 600px;
-        --app-preview-1-right: -200px;
-
-        --app-preview-2-width: 700px;
-        --app-preview-2-left: -400px;
-    }
-
-    .tomato-container,
-    .veggies-bg {
-        display: none;
-    }
-
-    .block-grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    body .subscription-card {
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .app-preview {
-        display: none;
-    }
-
-    body .first-block {
-        margin-top: 100px;
-    }
-
-    body .text-primary,
-    body .text-secondary {
-        color: var(--color-text-dark) !important;
-    }
-
-    body .card-container {
-        flex-direction: column;
-    }
-
-    body .card-column.margin-top-40 {
-        margin-top: 0;
+        /* HIDDEN */
     }
 }

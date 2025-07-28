@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="style/helpers.css" />
         <link rel="stylesheet" href="style/block.css" />
         <link rel="stylesheet" href="style/card.css" />
+        <link rel="stylesheet" href="style/responsive.css" />
         <link rel="stylesheet" href="style/veggies-placement.css" />
         <title>Leaf</title>
     </head>
@@ -17,7 +18,7 @@
         <div class="orange-bg">
             <img class="bg-container" src="./assets/bg.png" alt="Background" />
             <div class="container">
-                <section>
+                <section class="first-section">
                     <!-- Leaf SVG -->
                     <div class="leaf-container"><img src="./assets/leaf.svg" alt="Leaf" /></div>
                     <!-- Text Container -->
@@ -30,8 +31,8 @@
                         </div>
                     </div>
 
-                    <img class="app-preview app-preview-1" src="./assets/app-mobile.png" alt="App preview" />
-                    <img class="tomato-container" src="./assets/veggies/tomato.png" alt="Tomato" />
+                    <img class="hide-on-mobile app-preview-1" src="./assets/app-preview/app-mobile.png" alt="App preview" />
+                    <img class="hide-on-mobile tomato-container" src="./assets/veggies/tomato.png" alt="Tomato" />
                 </section>
 
                 <section class="first-block">
@@ -110,7 +111,7 @@
 
         <div class="image-bg-container">
             <div class="container position-relative">
-                <img class="app-preview app-preview-2" src="./assets/app-preview.png" alt="App mobile Leaf" />
+                <img class="hide-on-mobile app-preview-2" src="./assets/app-preview/app-preview.png" alt="App mobile Leaf" />
                 <section class="second-block">
                     <div class="block">
                         <div class="block-description">Contre le gaspillage</div>
@@ -155,7 +156,7 @@
                 <img class="vegg-image" src="./assets/veggies/mushroom-2.png" alt="Champinion" />
                 <img class="vegg-image" src="./assets/veggies/bell-pepper.png" alt="Poivron" />
             </div>
-            <img class="veggies-bg" src="./assets/veggies/plant-2.png" alt="plante 2" />
+            <img class="veggies-bg left" src="./assets/veggies/plant-2.png" alt="plante 2" />
             <img class="veggies-bg right" src="./assets/veggies/plant-1.png" alt="plante 1" />
             <div class="subscription-card">
                 <div class="subscription-card-title">Professionnels, cultivez votre réseau et faites pousser votre clientèle !</div>
@@ -197,7 +198,7 @@
             <section class="block">
                 <div class="block-description">une histoire vraie</div>
                 <h2 class="block-title">Une idée venue du Gers</h2>
-                <div class="layout">
+                <div class="layout-desktop">
                     <div>
                         <div class="block-sub-title">
                             <i>
@@ -226,8 +227,8 @@
             <div class="container margin-top-60">
                 <div class="layout">
                     <div class="combined-pictures">
-                        <img class="leafs" src="assets/veggies/leafs.png" alt="Feuilles" />
-                        <img class="app-mobile" src="assets/app-preview-2.png" alt="App mobile leaf" />
+                        <img class="leafs hide-on-mobile" src="assets/veggies/leafs.png" alt="Feuilles" />
+                        <img class="app-preview-3 hide-on-mobile" src="assets/app-preview/app-preview-2.png" alt="App mobile leaf" />
                     </div>
 
                     <section class="block margin-top-60">
@@ -260,30 +261,21 @@
             <div class="container">
                 <h2 class="block-title flex center">Ils parlent de nous...</h2>
                 <div class="media-container">
-                    <div class="flex-column media-width">
                         <img src="assets/medias/TF1.png" alt="TF1" />
                         <img src="assets/medias/occitanie-3.png" alt="occitanie-3" />
-                    </div>
-                    <div class="flex-column media-width">
                         <img src="assets/medias/france-bleu.png" alt="France bleau" />
                         <img src="assets/medias/le-parisien.png" alt="Le parisien" />
-                    </div>
-                    <div class="flex-column media-width">
                         <img src="assets/medias/france-2.png" alt="France 2" />
                         <img src="assets/medias/ladepeche.png" alt="Ladepeche" />
-                    </div>
-                    <div class="flex-column media-width">
                         <img src="assets/medias/c-dans-l-air.png" alt="C dans l'air" />
                         <img src="assets/medias/le-petit-journal.png" alt="Le petit journal" />
-                    </div>
-                    <div class="flex-column media-width">
                         <img src="assets/medias/ladepeche-fr.png" alt="Ladepeche.fr" />
                         <img src="assets/medias/dis-leur.png" alt="Dis leur" />
                     </div>
                 </div>
             </div>
             <img class="veggies-bg mirror right" src="./assets/veggies/plant-2.png" alt="plante 2" />
-            <img class="veggies-bg mirror" src="./assets/veggies/plant-1.png" alt="plante 1" />
+            <img class="veggies-bg mirror left" src="./assets/veggies/plant-1.png" alt="plante 1" />
         </section>
 
         <div class="image-bg-container-2">
@@ -340,5 +332,36 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div class="container">
+                <div class="top">
+                    <img src="assets/leaf-footer.png" alt="Leaf logo" />
+                    <div class="contact">contact@leafapp.fr</div>
+                </div>
+                <div class="bottom">
+                    <div class="first-line">
+                        <div class="link-container">
+                            <a href="#">Acceuil</a>
+                            <a href="#">Mentions légales</a>
+                        </div>
+                        <div class="button-container">
+                            <a href="#" class="button"><img src="./assets/apple-store.png" alt="Apple store" /></a>
+                            <a href="#" class="button"><img src="./assets/google-play.png" alt="Google play" /></a>
+                        </div>
+                    </div>
+
+                    <div class="second-line">
+                        <div class="copyright">©2023 Leaf App</div>
+                        <div class="social-container">
+                            <a href="#"><img src="assets/social-network-icon/linkedin.png" alt="Linkedin" /></a>
+                            <a href="#"><img src="assets/social-network-icon/facebook.png" alt="Facebook" /></a>
+                            <a href="#"><img src="assets/social-network-icon/instagram.png" alt="Instagram" /></a>
+                            <a href="#"><img src="assets/social-network-icon/youtube.png" alt="Youtube" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

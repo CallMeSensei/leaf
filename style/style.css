@@ -3,6 +3,11 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding: 0 64px;
+}
+
+.first-section {
+    padding-top: 120px;
 }
 
 body,
@@ -42,6 +47,7 @@ body {
 
 .orange-bg {
     background-color: #fdf8f5;
+    padding-bottom: 64px;
 }
 
 .bg-container {
@@ -92,6 +98,8 @@ body {
 .veggies-bg-container {
     padding-top: 200px;
     position: relative;
+    padding: 32px;
+    padding-top: 128px;
 }
 
 .veggies-bg {
@@ -102,6 +110,10 @@ body {
 
 .veggies-bg.right {
     right: 0;
+}
+
+.veggies-bg.left {
+    left: 0;
 }
 
 .text-primary {
@@ -147,9 +159,8 @@ body {
     width: var(--app-preview-2-width);
 }
 
-.layout {
-    display: flex;
-    gap: 32px;
+.app-preview-3 {
+    width: var(--app-preview-3-width);
 }
 
 .combined-pictures {
@@ -161,20 +172,22 @@ body {
     right: 0;
     top: 0;
     z-index: -1;
+    width: var(--app-preview-leaf-width);
 }
 
 .pumkin {
     background-image: url("../assets/veggies/pumpkin.png");
-    background-size: 350px;
+    background-size: var(--pumkin-size);
     background-position: bottom left;
     background-repeat: no-repeat;
 }
 
 .media-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 32px;
-    flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 .flex-column {
@@ -184,4 +197,46 @@ body {
 
 .media-width {
     width: 176px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .top {
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgba(212, 109, 40, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .bottom {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-bottom: 64px;
+}
+
+footer .bottom .first-line,
+footer .bottom .second-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact {
+    color: var(--color-primary-light);
+}
+
+footer .bottom .link-container,
+.social-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.social-container a {
+    display: block;
 }

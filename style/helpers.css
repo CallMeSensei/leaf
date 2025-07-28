@@ -55,3 +55,15 @@
     font-size: var(--text-size-xl);
     line-height: var(--text-line-height-xl);
 }
+
+.layout {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.layout-desktop {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+}
