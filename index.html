@@ -1,7 +1,31 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Leaf, l'application 100% gratuit pour localiser et acheter frais des produits régionaux autour de vous." name="description" />
+        <meta
+            content="leaf, localiser, et, acheter, frais, leafapp, agroecologie, kitchengarden, potagerbio, antigaspi, bienmanger, manger, mangermieux, fruitetlegumedesaison, mangerdesaison, mangerlocal, local, potager, circuitcourt, ecoresponsable, locavore, legumedesaison, mangerfrais, partage, zerodechet, zero, gratuit, food, fruits, fruit, fruitz, octobre, novembre, decembre, janvier, fevrier, mars, avril, mai, juin, juillet, aout, septembre, fruits et legumes du jardin, food applicaiton, fruits application, legumes application, bien manger, legume halloween, fruits de saison, châtaignes, fruit app, food connexion, appli fruits, application fruits, confiture, noix, fruit blog, vente de fruits et légumes entre particuliers, vente legume particulier, vente de légumes entre particuliers, application jardin, application vente legumes, vente de légumes entre particuliers, echange, troc, vente, saison, legumes potager, légumes pas cher, jardin autour de moi, potagers autour de moi, geolocalisation, trouver potager, legume jardin, légumes potager, légumes potagers, maraîchers autour de moi, près de chez moi, cagette legume, le marche da cote, le potager d'à côté, da, coter, le potager d'à côté, marche d'a cote, au jardin de saison, legumes jardin, potager légumes, qui suis-je fruits et légumes, légumes du potager, producteur fruit et legumes autour de moi, récupération fruits et légumes, legumes du jardin, producteur locaux, cagette de legume, cagette légumes, producteur de legume autour de moi, producteur legumes autour de moi, vente de fruits et légumes autour de moi, fruits et legumes pas cher, fruits et légumes autour de moi, mon potager chez moi, mes légumes chez moi, vendez achetez, producteur locaux livraison à domicile, surplus fruits et légumes, don fruits et légumes,récupération fruits et légumes,récupération fruits et légumes,vente de légumes entre particuliers,surplus potager, vente directe fruits"
+            name="keywords"
+        />
+        <link rel="canonical" href="https://www.leafapp.fr" />
+
+        <meta property="og:title" content="Localiser et acheter frais des produits régionaux" />
+        <meta
+            property="og:description"
+            content="Leaf, l'application 100% gratuit pour localiser et acheter frais des produits régionaux autour de vous."
+        />
+        <meta property="og:site_name" content="Leaf" />
+        <meta property="og:url" content="https://www.leafapp.fr" />
+        <meta property="og:image" content="https://www.leafapp.fr/assets/leaf_og.jpg" />
+        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+        <meta property="og:image:alt" content="LeafApp" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
@@ -12,30 +36,69 @@
         <link rel="stylesheet" href="style/card.css" />
         <link rel="stylesheet" href="style/responsive.css" />
         <link rel="stylesheet" href="style/veggies-placement.css" />
-        <title>Leaf</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+        <title>LEAF : Localiser et acheter frais des produits régionaux</title>
+        <link rel="stylesheet" href="https://unpkg.com/modal-video@2.4.6/css/modal-video.min.css" />
+        <script src="https://unpkg.com/modal-video@2.4.6/js/modal-video.min.js"></script>
+        <script>
+            window.addEventListener("DOMContentLoaded", function () {
+                new ModalVideo(".js-modal-btn");
+            });
+
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (!section) return;
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
+        <script src="js/menu.js"></script>
     </head>
     <body>
+        <div class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <img src="./assets/icon/arrow-forward-orange.png" alt="Arrow up" />
+        </div>
         <div class="orange-bg">
+            <nav class="menu">
+                <div class="logo-text">
+                    <span class="l">L</span>
+                    <span class="eaf">EAF</span>
+                </div>
+                <div class="menu-container bi bi-list display-on-tablet" onclick="toggleMenu()"></div>
+                <div class="menu-container-mobile">
+                    <a onclick="scrollToSection('advantages')">Avantages</a>
+                    <a onclick="scrollToSection('concept')">Concept</a>
+                    <a onclick="scrollToSection('media')">Ils parlent de nous</a>
+                    <a onclick="scrollToSection('contact')">Contact</a>
+                </div>
+                <div class="menu-container hide-on-tablet">
+                    <a onclick="scrollToSection('advantages')">Avantages</a>
+                    <a onclick="scrollToSection('concept')">Concept</a>
+                    <a onclick="scrollToSection('media')">Ils parlent de nous</a>
+                    <a onclick="scrollToSection('contact')">Contact</a>
+                </div>
+            </nav>
             <img class="bg-container" src="./assets/bg.png" alt="Background" />
             <div class="container">
                 <section class="first-section">
-                    <!-- Leaf SVG -->
-                    <div class="leaf-container"><img src="./assets/leaf.svg" alt="Leaf" /></div>
                     <!-- Text Container -->
                     <div class="text-container">
                         <h1 class="text-primary">Localisez et Achetez Frais</h1>
                         <p class="text-secondary">Achetez ou Vendez le surplus du potager, de particulier à particulier.</p>
                         <div class="button-container">
-                            <a href="#" class="button"><img src="./assets/apple-store.png" alt="Apple store" /></a>
-                            <a href="#" class="button"><img src="./assets/google-play.png" alt="Google play" /></a>
+                            <a href="https://apps.apple.com/fr/app/leaf-france/id1564661481" class="button">
+                                <img src="./assets/apple-store.svg" alt="Apple store" />
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.rougetomate.leafapp&gl=FR" class="button">
+                                <img src="./assets/google-play.svg" alt="Google play" />
+                            </a>
                         </div>
                     </div>
 
-                    <img class="hide-on-mobile app-preview-1" src="./assets/app-preview/app-mobile.png" alt="App preview" />
-                    <img class="hide-on-mobile tomato-container" src="./assets/veggies/tomato.png" alt="Tomato" />
+                    <img class="hide-on-tablet app-preview-1" src="./assets/app-preview/app-mobile.png" alt="App preview" />
+                    <img class="hide-on-tablet tomato-container" src="./assets/veggies/tomato.png" alt="Tomato" />
                 </section>
 
-                <section class="first-block">
+                <section class="first-block" id="advantages">
                     <div class="block">
                         <div class="block-description">L'application Leaf</div>
                         <h2 class="block-title">Facile, gratuite et solidaire.</h2>
@@ -102,8 +165,12 @@
                 </section>
 
                 <div class="button-container margin-top-60 center">
-                    <a href="#" class="button"><img src="./assets/apple-store.png" alt="Apple store" /></a>
-                    <a href="#" class="button"><img src="./assets/google-play.png" alt="Google play" /></a>
+                    <a href="https://apps.apple.com/fr/app/leaf-france/id1564661481" class="button">
+                        <img src="./assets/apple-store.svg" alt="Apple store" />
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.rougetomate.leafapp&gl=FR" class="button">
+                        <img src="./assets/google-play.svg" alt="Google play" />
+                    </a>
                 </div>
             </div>
         </div>
@@ -111,7 +178,7 @@
 
         <div class="image-bg-container">
             <div class="container position-relative">
-                <img class="hide-on-mobile app-preview-2" src="./assets/app-preview/app-preview.png" alt="App mobile Leaf" />
+                <img class="hide-on-tablet app-preview-2" src="./assets/app-preview/app-preview.png" alt="App mobile Leaf" />
                 <section class="second-block">
                     <div class="block">
                         <div class="block-description">Contre le gaspillage</div>
@@ -129,19 +196,19 @@
                                 <p class="card-description">Vendez vos surplus de récoltes pour éviter le gaspillage alimentaire.</p>
                             </div>
                             <div class="card">
-                                <h3 class="card-title">Réduisez le gaspillage</h3>
-                                <p class="card-description">Vendez vos surplus de récoltes pour éviter le gaspillage alimentaire.</p>
+                                <h3 class="card-title">Ayez un impact positif</h3>
+                                <p class="card-description">Chaque achat contribue à une planète plus durable.</p>
                             </div>
                         </div>
 
                         <div class="card-column margin-top-40">
                             <div class="card">
-                                <h3 class="card-title">Réduisez le gaspillage</h3>
-                                <p class="card-description">Vendez vos surplus de récoltes pour éviter le gaspillage alimentaire.</p>
+                                <h3 class="card-title">Achetez local</h3>
+                                <p class="card-description">Soutenez les producteurs locaux en achetant des produits frais de saison.</p>
                             </div>
                             <div class="card">
-                                <h3 class="card-title">Réduisez le gaspillage</h3>
-                                <p class="card-description">Vendez vos surplus de récoltes pour éviter le gaspillage alimentaire.</p>
+                                <h3 class="card-title">Rejoignez la cause</h3>
+                                <p class="card-description">Ensemble, luttons contre le gaspillage alimentaire.</p>
                             </div>
                         </div>
                     </div>
@@ -195,7 +262,7 @@
         </div>
 
         <div class="container margin-top-60">
-            <section class="block">
+            <section class="block" id="concept">
                 <div class="block-description">une histoire vraie</div>
                 <h2 class="block-title">Une idée venue du Gers</h2>
                 <div class="layout-desktop">
@@ -219,20 +286,20 @@
                             (pour Localiser Et Acheter Frais), l’application qui crée du lien entre consommateurs et cultivateurs. Corine B.
                         </div>
                     </div>
-                    <img src="assets/agriculteur.png" alt="Agriculteur" />
+                    <img class="hide-on-tablet" src="assets/agriculteur.png" alt="Agriculteur" />
                 </div>
             </section>
         </div>
         <div class="position-relative pumkin">
             <div class="container margin-top-60">
-                <div class="layout">
+                <div class="layout align-items-center">
                     <div class="combined-pictures">
-                        <img class="leafs hide-on-mobile" src="assets/veggies/leafs.png" alt="Feuilles" />
-                        <img class="app-preview-3 hide-on-mobile" src="assets/app-preview/app-preview-2.png" alt="App mobile leaf" />
+                        <img class="leafs hide-on-tablet" src="assets/veggies/leafs.png" alt="Feuilles" />
+                        <img class="app-preview-3 hide-on-tablet" src="assets/app-preview/app-preview-2.png" alt="App mobile leaf" />
                     </div>
 
                     <section class="block margin-top-60">
-                        <div class="block-description">Des avtanges</div>
+                        <div class="block-description">Des avantages</div>
                         <h2 class="block-title">Récoltez et Partagez en Toute Simplicité</h2>
                         <div class="block-sub-title">
                             Leaf, l’application qui favorise la communication directe entre les consommateurs et les cultivateurs récoltants pour une
@@ -249,8 +316,12 @@
                             </div>
                         </div>
                         <div class="button-container">
-                            <a href="#" class="button"><img src="./assets/apple-store.png" alt="Apple store" /></a>
-                            <a href="#" class="button"><img src="./assets/google-play.png" alt="Google play" /></a>
+                            <a href="https://apps.apple.com/fr/app/leaf-france/id1564661481" class="button">
+                                <img src="./assets/apple-store.svg" alt="Apple store" />
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.rougetomate.leafapp&gl=FR" class="button">
+                                <img src="./assets/google-play.svg" alt="Google play" />
+                            </a>
                         </div>
                     </section>
                 </div>
@@ -259,19 +330,42 @@
 
         <section class="veggies-bg-container">
             <div class="container">
-                <h2 class="block-title flex center">Ils parlent de nous...</h2>
+                <h2 class="block-title flex center" id="media">Ils parlent de nous...</h2>
                 <div class="media-container">
-                        <img src="assets/medias/TF1.png" alt="TF1" />
-                        <img src="assets/medias/occitanie-3.png" alt="occitanie-3" />
-                        <img src="assets/medias/france-bleu.png" alt="France bleau" />
-                        <img src="assets/medias/le-parisien.png" alt="Le parisien" />
-                        <img src="assets/medias/france-2.png" alt="France 2" />
-                        <img src="assets/medias/ladepeche.png" alt="Ladepeche" />
-                        <img src="assets/medias/c-dans-l-air.png" alt="C dans l'air" />
-                        <img src="assets/medias/le-petit-journal.png" alt="Le petit journal" />
-                        <img src="assets/medias/ladepeche-fr.png" alt="Ladepeche.fr" />
-                        <img src="assets/medias/dis-leur.png" alt="Dis leur" />
-                    </div>
+                    <a href="#" class="js-modal-btn" data-video-url="./assets/video/tf1.mp4">
+                        <img src="assets/medias/logo_tf1.webp" alt="TF1" />
+                    </a>
+                    <a href="#" class="js-modal-btn" data-video-url="./assets/video/france3.mp4">
+                        <img src="assets/medias/logo_occitanie.webp" alt="occitanie-3" />
+                    </a>
+                    <a
+                        href="https://www.francebleu.fr/infos/agriculture-peche/la-nouvelle-eco-l-application-leaf-met-en-relation-des-particuliers-consommateurs-et-cultivateurs-de-1661350672"
+                    >
+                        <img src="assets/medias/logo_francebleu.webp" alt="France bleu" />
+                    </a>
+                    <a
+                        href="https://www.leparisien.fr/haute-garonne-31/une-toulousaine-cree-une-application-pour-mettre-en-relation-les-jardiniers-et-consommateurs-14-09-2022-7W6UD2TPSRAPJKNEYM5MK7XS5E.php"
+                    >
+                        <img src="assets/medias/logo_leparisien.webp" alt="Le parisien" />
+                    </a>
+                    <a href="#" class="js-modal-btn" data-video-url="./assets/video/france2.mp4">
+                        <img src="assets/medias/logo_france2.webp" alt="France 2" />
+                    </a>
+                    <a href="https://www.ladepeche.fr/2022/07/21/corine-a-imagine-leaf-le-reseau-social-des-potagers-10447555.php">
+                        <img src="assets/medias/logo_ladepeche.webp" alt="Ladepeche.fr" />
+                    </a>
+                    <a href="#" class="js-modal-btn" data-video-url="./assets/video/cdanslair.mp4">
+                        <img src="assets/medias/logo_cdanslair.webp" alt="C dans l'air" />
+                    </a>
+                    <a href="https://www.lepetitjournal.net/32-gers/2022/08/09/leaf-une-application-de-corine-bourdoncle-pour-eviter-le-gaspillage">
+                        <img src="assets/medias/logo_lepetitjournal.webp" alt="Le petit journal" />
+                    </a>
+                    <a href="https://www.ladepeche.fr/2022/08/23/ca-decolle-pour-le-reseau-social-des-potagers-de-corine-10501305.php">
+                        <img src="assets/medias/logo_ladepeche_midi.webp" alt="Ladepeche midi" />
+                    </a>
+                    <a href="https://dis-leur.fr/surplus-de-potagers-et-si-vous-achetiez-les-legumes-chez-votre-voisin/">
+                        <img src="assets/medias/logo_disleur.webp" alt="Dis leur" />
+                    </a>
                 </div>
             </div>
             <img class="veggies-bg mirror right" src="./assets/veggies/plant-2.png" alt="plante 2" />
@@ -333,31 +427,35 @@
             </div>
         </div>
 
-        <footer>
+        <footer id="contact">
             <div class="container">
                 <div class="top">
-                    <img src="assets/leaf-footer.png" alt="Leaf logo" />
-                    <div class="contact">contact@leafapp.fr</div>
+                    <img src="./assets/leaf-home.png" alt="Leaf" />
+                    <a href="mailto:contact@leafapp.fr" class="contact">contact@leafapp.fr</a>
                 </div>
                 <div class="bottom">
                     <div class="first-line">
                         <div class="link-container">
                             <a href="#">Acceuil</a>
-                            <a href="#">Mentions légales</a>
+                            <a href="mention-legal.html">Mentions légales</a>
                         </div>
                         <div class="button-container">
-                            <a href="#" class="button"><img src="./assets/apple-store.png" alt="Apple store" /></a>
-                            <a href="#" class="button"><img src="./assets/google-play.png" alt="Google play" /></a>
+                            <a href="https://apps.apple.com/fr/app/leaf-france/id1564661481" class="button">
+                                <img src="./assets/apple-store.svg" alt="Apple store" />
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.rougetomate.leafapp&gl=FR" class="button">
+                                <img src="./assets/google-play.svg" alt="Google play" />
+                            </a>
                         </div>
                     </div>
 
                     <div class="second-line">
                         <div class="copyright">©2023 Leaf App</div>
                         <div class="social-container">
-                            <a href="#"><img src="assets/social-network-icon/linkedin.png" alt="Linkedin" /></a>
-                            <a href="#"><img src="assets/social-network-icon/facebook.png" alt="Facebook" /></a>
-                            <a href="#"><img src="assets/social-network-icon/instagram.png" alt="Instagram" /></a>
-                            <a href="#"><img src="assets/social-network-icon/youtube.png" alt="Youtube" /></a>
+                            <a href="https://www.linkedin.com/company/leaf-france"><img src="assets/social-network-icon/linkedin.png" alt="Linkedin" /></a>
+                            <a href="https://www.facebook.com/Leaffrance-100392858828499"><img src="assets/social-network-icon/facebook.png" alt="Facebook" /></a>
+                            <a href="https://www.instagram.com/leaf.france/"><img src="assets/social-network-icon/instagram.png" alt="Instagram" /></a>
+                            <a href="https://www.youtube.com/@leafapp/videos"><img src="assets/social-network-icon/youtube.png" alt="Youtube" /></a>
                         </div>
                     </div>
                 </div>

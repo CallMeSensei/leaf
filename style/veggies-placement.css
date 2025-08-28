@@ -20,9 +20,12 @@
     }
 }
 
+.vegg-image {
+    transform: scale(0.9);
+}
+
 @media (max-width: 900px) {
     .vegg-image {
-        transform: scale(0.8);
         height: auto;
     }
 }

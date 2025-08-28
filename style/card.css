@@ -26,13 +26,14 @@
     line-height: var(--text-line-height-md);
     font-weight: 500;
     color: var(--color-primary);
-    white-space: nowrap;
+    text-align: center;
 }
 
 .card-description {
     font-size: var(--text-size-xs);
     line-height: var(--text-line-height-xs);
     color: var(--color-text-dark-light);
+    text-align: center;
 }
 
 /* Subscription card */
@@ -85,7 +86,8 @@
 }
 
 .subscription-card .subscription-card-description-item strong {
-    font-weight: 500;
+    font-weight: bold;
+    font-size: var(--text-size-md);
 }
 
 .cta-card-container {

@@ -6,12 +6,12 @@
     --color-text-dark-light: rgba(15, 3, 31, 0.6);
 
     /* Button */
-    --button-height: 54px;
+    --button-height: 60px;
     --button-gap: 40px;
 
     --pumkin-size: 350px;
     --app-preview-3-width: 592px;
-    --app-preview-leaf-width: 311px;
+    --app-preview-leaf-width: 160px;
 }
 
 /* Desktop and large screen */
@@ -37,7 +37,6 @@
         --text-primary-spacing-top: 270px;
 
         /* Button */
-        --button-height: 54px;
         --button-gap: 40px;
 
         /* App preview */
@@ -55,7 +54,7 @@
 /* Small laptop */
 @media (min-width: 1440px) and (max-width: 1920px) {
     :root {
-        --container-width: 75%;
+        --container-width: 80%;
         --pumkin-size: 250px;
 
         /* Text */
@@ -73,10 +72,9 @@
         --text-line-height-xs: 20px;
         --text-line-height-xxs: 18px;
 
-        --text-primary-spacing-top: 200px;
+        --text-primary-spacing-top: 150px;
 
         /* Button */
-        --button-height: 40px;
         --button-gap: 20px;
 
         /* App preview */
@@ -85,9 +83,18 @@
 
         --app-preview-2-width: 700px;
         --app-preview-2-left: -200px;
+    }
+}
 
-        --app-preview-3-width: 400px;
-        --app-preview-leaf-width: 200px;
+@media (max-width: 1280px) {
+    :root {
+        --text-primary-spacing-top: 100px;
+    }
+}
+
+@media (max-width: 1080px) {
+    :root {
+        --text-primary-spacing-top: 50px;
     }
 }
 
@@ -111,10 +118,7 @@
         --text-line-height-xs: 20px;
         --text-line-height-xxs: 18px;
 
-        --text-primary-spacing-top: 200px;
-
         /* Button */
-        --button-height: 40px;
         --button-gap: 20px;
 
         /* App preview */
@@ -150,7 +154,7 @@
         --text-line-height-xs: 20px;
         --text-line-height-xxs: 18px;
 
-        --text-primary-spacing-top: 200px;
+        --text-primary-spacing-top: 50px;
 
         /* Button */
         --button-height: 40px;
@@ -163,7 +167,7 @@
 
 @media (max-width: 768px) {
     :root {
-        --container-width: 80%;
+        --container-width: 100%;
 
         /* Text */
         --text-size-xl: 48px;
@@ -180,7 +184,7 @@
         --text-line-height-xs: 20px;
         --text-line-height-xxs: 18px;
 
-        --text-primary-spacing-top: 200px;
+        --text-primary-spacing-top: 100px;
 
         /* Button */
         --button-height: 40px;
