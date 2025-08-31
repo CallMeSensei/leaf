@@ -16,7 +16,7 @@
     position: absolute;
     top: 100%;
     right: 32px;
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     border-radius: 16px;
     flex-direction: column;
@@ -36,14 +36,31 @@
     .first-block {
         margin-top: 250px;
     }
-}
-
-@media (max-width: 960px) {
     .layout-desktop {
         flex-direction: column;
     }
+}
+
+@media (max-width: 960px) {
     .layout {
         flex-direction: column;
+    }
+    body .card-container {
+        flex-direction: column;
+        &.banner {
+            position: relative;
+            transform: none;
+            margin: 0 auto;
+            left: 0;
+            margin-top: 32px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .app-preview-1 {
+        position: relative;
+        top: 0;
+        margin-top: 50px;
     }
     .display-on-tablet {
         display: block;
@@ -65,6 +82,12 @@
             grid-column-start: 2;
         }
     }
+    .switch-on-tablet {
+        flex-direction: column-reverse;
+    }
+    .combined-pictures .leafs {
+        top: -5px;
+    }
     .menu-container::before {
         content: "\f479";
         width: 40px;
@@ -85,13 +108,16 @@
 }
 
 @media (max-width: 768px) {
+    .orange-bg {
+        padding-bottom: 64px;
+    }
     .menu-container-mobile {
-        max-width: 400px;
+        max-width: 300px;
+    }
+    .tomato-container {
+        width: 30%;
     }
     .menu-container a {
-        display: none;
-    }
-    .pumkin {
         display: none;
     }
     .container {
@@ -100,7 +126,6 @@
     .cta-card {
         padding: 32px 16px;
     }
-    .tomato-container,
     .veggies-bg {
         display: none;
     }
@@ -121,8 +146,8 @@
         color: var(--color-text-dark) !important;
     }
 
-    body .card-container {
-        flex-direction: column;
+    .card {
+        width: 100%;
     }
     .card-column {
         align-items: center;
@@ -131,12 +156,23 @@
     .image-bg-container-2 {
         padding: 250px 0;
     }
+    .veggies-bg-container {
+        padding-top: 100px;
+    }
 
     body .card-column.margin-top-40 {
         margin-top: 0;
     }
+    footer .top {
+        flex-direction: column;
+        gap: 16px;
+    }
     footer .bottom .link-container {
         gap: 8px;
+        flex-direction: column;
+    }
+    footer .bottom .first-line {
+        flex-direction: column;
     }
 }
 
@@ -172,7 +208,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
-    .tomato-container,
     .veggies-bg {
         display: none;
     }

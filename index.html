@@ -57,11 +57,10 @@
         <div class="scroll-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
             <img src="./assets/icon/arrow-forward-orange.png" alt="Arrow up" />
         </div>
-        <div class="orange-bg">
+        <div class="orange-bg" style="position: relative">
             <nav class="menu">
-                <div class="logo-text">
-                    <span class="l">L</span>
-                    <span class="eaf">EAF</span>
+                <div class="logo">
+                    <img src="./assets/logo.png" alt="Logo Leaf" />
                 </div>
                 <div class="menu-container bi bi-list display-on-tablet" onclick="toggleMenu()"></div>
                 <div class="menu-container-mobile">
@@ -94,8 +93,8 @@
                         </div>
                     </div>
 
-                    <img class="hide-on-tablet app-preview-1" src="./assets/app-preview/app-mobile.png" alt="App preview" />
-                    <img class="hide-on-tablet tomato-container" src="./assets/veggies/tomato.png" alt="Tomato" />
+                    <img class="app-preview-1" src="./assets/app-preview/app-mobile.png" alt="App preview" />
+                    <img class="tomato-container" src="./assets/veggies/tomato.png" alt="Tomato" />
                 </section>
 
                 <section class="first-block" id="advantages">
@@ -173,6 +172,24 @@
                     </a>
                 </div>
             </div>
+            <div class="card-container container banner">
+                <div class="card small">
+                    <h3 class="card-title">1. Télécharger</h3>
+                    <p class="card-description">Gratuit sur App Store et Google Play</p>
+                </div>
+                <div class="card small">
+                    <h3 class="card-title">2. Se géolocaliser</h3>
+                    <p class="card-description">Trouver des cultivateurs à proximité</p>
+                </div>
+                <div class="card small">
+                    <h3 class="card-title">3. Chercher/Déposer</h3>
+                    <p class="card-description">Consulter ou créer des annonces</p>
+                </div>
+                <div class="card small">
+                    <h3 class="card-title">4. Se contacter</h3>
+                    <p class="card-description">Échanger directement sans intermédiaire</p>
+                </div>
+            </div>
         </div>
         <!-- Orange BG end -->
 
@@ -226,7 +243,14 @@
             <img class="veggies-bg left" src="./assets/veggies/plant-2.png" alt="plante 2" />
             <img class="veggies-bg right" src="./assets/veggies/plant-1.png" alt="plante 1" />
             <div class="subscription-card">
-                <div class="subscription-card-title">Professionnels, cultivez votre réseau et faites pousser votre clientèle !</div>
+                <div class="subscription-card-title">
+                    <div class="pro">
+                        Découvrez la
+                        <strong>version PRO</strong>
+                        de LEAF
+                    </div>
+                    <div class="title">Professionnels, cultivez votre réseau et faites pousser votre clientèle !</div>
+                </div>
                 <div class="subscription-card-description">
                     <div class="subscription-card-description-item">
                         <img src="./assets/icon/check.png" alt="Check" />
@@ -276,7 +300,7 @@
                         </div>
                         <div>
                             Corine, raconte qu’adulte, elle revenait dans son Gers natal voir ses parents, et qu’elle repartait toujours avec une
-                            provision de légumes, de fruits, ou encore de confitures maison :« Ces produits de la ferme étaient pour mes parents la
+                            provision de légumes, de fruits, ou encore de confitures maison : « Ces produits de la ferme étaient pour mes parents la
                             garantie d'un garde-manger sain et pour moi, ils étaient le symbole de leur affection et de leur amour ».
                             <br />
                             Or, en ville, il n'est pas toujours facile d'avoir un potager et elle a alors fait le constat suivant :
@@ -286,16 +310,16 @@
                             (pour Localiser Et Acheter Frais), l’application qui crée du lien entre consommateurs et cultivateurs. Corine B.
                         </div>
                     </div>
-                    <img class="hide-on-tablet" src="assets/agriculteur.png" alt="Agriculteur" />
+                    <img src="assets/agriculteur.png" alt="Agriculteur" />
                 </div>
             </section>
         </div>
         <div class="position-relative pumkin">
-            <div class="container margin-top-60">
-                <div class="layout align-items-center">
+            <div class="container margin-top-60" style="margin-left: 0; margin-right: 0; width: 100%">
+                <div class="layout align-items-center switch-on-tablet">
                     <div class="combined-pictures">
-                        <img class="leafs hide-on-tablet" src="assets/veggies/leafs.png" alt="Feuilles" />
-                        <img class="app-preview-3 hide-on-tablet" src="assets/app-preview/app-preview-2.png" alt="App mobile leaf" />
+                        <img class="leafs" src="assets/veggies/leafs.png" alt="Feuilles" />
+                        <img class="app-preview-3" src="assets/app-preview/app-preview-2.png" alt="App mobile leaf" />
                     </div>
 
                     <section class="block margin-top-60">
@@ -430,7 +454,9 @@
         <footer id="contact">
             <div class="container">
                 <div class="top">
-                    <img src="./assets/leaf-home.png" alt="Leaf" />
+                    <div class="logo">
+                        <img src="./assets/logo.png" alt="Logo Leaf" />
+                    </div>
                     <a href="mailto:contact@leafapp.fr" class="contact">contact@leafapp.fr</a>
                 </div>
                 <div class="bottom">
@@ -452,9 +478,15 @@
                     <div class="second-line">
                         <div class="copyright">©2023 Leaf App</div>
                         <div class="social-container">
-                            <a href="https://www.linkedin.com/company/leaf-france"><img src="assets/social-network-icon/linkedin.png" alt="Linkedin" /></a>
-                            <a href="https://www.facebook.com/Leaffrance-100392858828499"><img src="assets/social-network-icon/facebook.png" alt="Facebook" /></a>
-                            <a href="https://www.instagram.com/leaf.france/"><img src="assets/social-network-icon/instagram.png" alt="Instagram" /></a>
+                            <a href="https://www.linkedin.com/company/leaf-france">
+                                <img src="assets/social-network-icon/linkedin.png" alt="Linkedin" />
+                            </a>
+                            <a href="https://www.facebook.com/Leaffrance-100392858828499">
+                                <img src="assets/social-network-icon/facebook.png" alt="Facebook" />
+                            </a>
+                            <a href="https://www.instagram.com/leaf.france/">
+                                <img src="assets/social-network-icon/instagram.png" alt="Instagram" />
+                            </a>
                             <a href="https://www.youtube.com/@leafapp/videos"><img src="assets/social-network-icon/youtube.png" alt="Youtube" /></a>
                         </div>
                     </div>
